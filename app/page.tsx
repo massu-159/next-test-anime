@@ -13,7 +13,7 @@ export default function Home() {
       <About></About>
       <Contact></Contact>
       <div>
-        As a tight-knit team of experts, we create memorable and emotional digital experiences.
+        
         <div className="mx-6 mt-2  -z-10">
           <div className='relative'>
             <div className='absolute left-12 bottom-12 w-96 h-60 bg-white rounded-3xl bg-opacity-40 backdrop-blur-md p-4'>

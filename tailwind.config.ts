@@ -16,6 +16,11 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'phone-pattern': "url('/phone.jpg')",
+        'object-pattern': "url('/object.jpg')",
+        'connection-pattern': "url('/connection.jpg')",
+      },
       boxShadow: {
         'round-br': '30px 30px 0 0 rgba(255, 255, 255, 1)',
         'round-tl': '-20px -20px 0 0 rgba(255, 255, 255, 1)',
