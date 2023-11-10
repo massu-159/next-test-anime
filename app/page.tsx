@@ -1,111 +1,57 @@
-import Image from 'next/image'
+import Navigation from '../components/navigation'
+import Top from '../components/sections/top'
+import Products from '../components/sections/products'
+import About from '../components/sections/about'
+import Contact from '../components/sections/contact'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <video src="/top-house.mp4" className='absolute h-full w-full' autoPlay loop muted playsInline></video>
-      <div className="p-24 z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="/description"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-      <Image
-        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-        src="/next.svg"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
-
-      <div className="z-20 p-24 mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    <main>
+      <Navigation></Navigation>
+      <Top></Top>
+      <Products></Products>
+      <About></About>
+      <Contact></Contact>
       <div>
-        <video src=""></video>
+        As a tight-knit team of experts, we create memorable and emotional digital experiences.
+        <div className="mx-6 mt-2  -z-10">
+          <div className='relative'>
+            <div className='absolute left-12 bottom-12 w-96 h-60 bg-white rounded-3xl bg-opacity-40 backdrop-blur-md p-4'>
+              <h2 className='text-3xl my-3'>unti deluxe</h2>
+              <p>We excel in VR and AR solutions, offering custom development services and expert consultancy. Our focus on innovation reshapes industries, crafting immersive experiences and guiding businesses toward strategic implementation for impactful results.</p>
+            </div>
+
+            {/* 右下 */}
+            <div className='absolute right-[600px] bottom-36 w-28 h-12 bg-white rounded-3xl bg-opacity-40 backdrop-blur-md p-2'>
+              <p className='flex justify-center items-center text-lg text-green-900'>virtual</p>
+            </div>
+            <div className='absolute right-[480px] bottom-36 w-28 h-12 bg-white rounded-3xl bg-opacity-40 backdrop-blur-md p-2'>
+              <p className='flex justify-center items-center text-lg text-green-900'>augment</p>
+            </div>
+            <div className='absolute left-0 top-0 w-[160px] h-16 bg-white rounded-br-3xl'>
+              <div className="absolute bottom-0 right-full h-[30px] w-[30px]"></div>
+              <div className="before:absolute before:top-0 before:left-full before:h-[40px] before:w-[40px] before:shadow-round-tl before:rounded-full"></div>
+              <div className="before:absolute before:top-full before:left-0 before:h-[40px] before:w-[40px] before:shadow-round-tl before:rounded-full"></div>
+            </div>
+            <div className='absolute right-0 bottom-32 w-1/4 h-32 bg-white rounded-tl-3xl'>
+              <div className="absolute bottom-0 right-full h-[30px] w-[30px]"></div>
+              <div className="before:absolute before:bottom-0 before:right-full before:h-[60px] before:w-[60px]  before:shadow-round-br before:rounded-full"></div>
+              <div className="before:absolute before:bottom-full before:right-0 before:h-[60px] before:w-[60px] before:shadow-round-br before:rounded-full"></div>
+              <div className="pt-3 pr-6 text-end text-8xl">
+                <p>Create</p>
+              </div>
+            </div>
+            <div className='absolute right-0 bottom-0 w-1/2 h-32 bg-white rounded-tl-3xl'>
+              <div className="absolute bottom-0 right-full h-[30px] w-[30px]"></div>
+              <div className="before:absolute before:bottom-0 before:right-full before:h-[60px] before:w-[60px]  before:shadow-round-br before:rounded-full"></div>
+              <div className="before:absolute before:bottom-full before:right-0 before:h-[60px] before:w-[60px] before:shadow-round-br before:rounded-full"></div>
+              <div className="pt-3 pr-6 text-end text-8xl">
+                <p>an Abstraction</p>
+              </div>
+            </div>
+            <video src="/top-home.webm" className='w-screen rounded-3xl' autoPlay loop muted playsInline></video>
+          </div>
+        </div>
       </div>
     </main>
   )
