@@ -1,6 +1,14 @@
 import { Bars3BottomRightIcon, PlusIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import Link from 'next/link'
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
 const Navigation = () => {
   return (
@@ -29,9 +37,32 @@ const Navigation = () => {
             <span>Become a Client</span>
           </Link>
         </div>
-        <Link href={"#"} className='rounded-full bg-white bg-opacity-60 w-16 h-16 flex justify-center items-center cursor-pointer'>
-          <Bars3BottomRightIcon className='text-green-800 w-8 h-8'></Bars3BottomRightIcon>
-        </Link>
+          <Sheet>
+            <SheetTrigger>
+              <div className='rounded-full bg-white bg-opacity-60 w-16 h-16 flex justify-center items-center cursor-pointer'>
+                <Bars3BottomRightIcon className='text-green-800 w-8 h-8'></Bars3BottomRightIcon>
+              </div>
+            </SheetTrigger>
+            <SheetContent>
+              <SheetHeader>
+                <SheetTitle>Are you sure absolutely sure?</SheetTitle>
+                <SheetDescription>
+                  <Link href={"#"} className='flex items-center px-3 cursor-pointer border-b border-transparent transition duration-500 ease hover:border-white hover:text-green-900'>
+                    Home
+                  </Link>
+                  <Link href={"#"} className='flex items-center px-3 cursor-pointer border-b border-transparent transition duration-500 ease hover:border-white hover:text-green-900'>
+                    About
+                  </Link>
+                  <Link href={"#"} className='flex items-center px-3 cursor-pointer border-b border-transparent transition duration-500 ease hover:border-white hover:text-green-900'>
+                    Products
+                  </Link>
+                  <Link href={"#"} className='flex items-center px-3 cursor-pointer border-b border-transparent transition duration-500 ease hover:border-white hover:text-green-900'>
+                    Contact
+                  </Link>
+                </SheetDescription>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
       </div>
     </div>
   )
