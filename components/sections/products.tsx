@@ -25,7 +25,7 @@ const List = [
 
 const Products = () => {
   return (
-    <div className="max-w-[1920px] mx-auto px-24 py-24">
+    <div className="max-w-[1920px] mx-auto px-24 pt-32">
       <h2 className="mb-3">01 -- Products</h2>
       <p className="mb-6 text-3xl max-w-2xl">As a tight-knit team of experts, we create memorable and emotional digital experiences.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
